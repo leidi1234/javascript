@@ -1,3 +1,9 @@
+var titulo = document.querySelector(".titulo");
+titulo.textContent = "Aparecida Nutricionista";
+
+var paciente = document.querySelector("#primeiro-paciente");
+
+console.log(paciente)
 
 var pacientes = document.querySelectorAll(".paciente");
 
@@ -30,4 +36,9 @@ for(var i = 0; i < pacientes.length ; i++){
         var imc = peso / ( altura * altura);    
         tdImc.textContent = imc;
     }    
-}
+}<script>
+    var paragrafo = document.querySelector("#latim");
+    paragrafo.style.backgroundColor = "blue";
+</script><script>
+   //resultadovar titulo = document.querySelector("h1");
+console.log(titulo.classList);
