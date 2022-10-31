@@ -23,7 +23,10 @@ vv<tr class="paciente" id="primeiro-paciente">
     <td class="info-nome">Paulo</td>
     <td class="info-peso">100</td>
     <td class="info-altura">2.00</td>
-    <td class="info-gordura">10</td>
+    <td class="info-gordura">10</td>var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Oi, cliquei no botão.");
+});
     <td class="info-imc">0</td>
 </tr>var titulo = document.querySelector(".titulo");
 titulo.textContent = "Aparecida Nutricionista";
@@ -50,7 +53,10 @@ var peso = tdPeso.textContent;
 
 var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;<tr class="paciente" id="primeiro-paciente">...</tr>
-<td class="info-altura">2.00</td>
+<td class="info-altura">2.00</td>var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Oi, cliquei no botão.");
+});
 
 2.00vIMC = peso / altura x alturavar tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
@@ -68,7 +74,10 @@ var imc = peso / altura * altura; // 100 / 2.0 x 2.0 = 100 / 4 =>>>>>>> 25
 console.log(imc);<!-- ... -->
 <section class="container">
     <h2 id="titulo-form">Adicionar novo paciente</h2>
-    <form id="form-adiciona">
+    <form id="form-adiciona">var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Oi, cliquei no botão.");
+});
         <div class="grupo">
             <label for="nome">Nome:</label>
             <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
@@ -82,7 +91,10 @@ console.log(imc);<!-- ... -->
             <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
         </div>
         <div class="grupo">
-            <label for="gordura">% de Gordura:</label>
+            <label for="gordura">% de Gordura:</label>var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Oi, cliquei no botão.");
+});
             <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
         </div>
 
