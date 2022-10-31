@@ -19,3 +19,62 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+var titulo = document.querySelector(".titulo");
+titulo.textContent = "Aparecida Nutricionista";
+
+var paciente = document.querySelector(".paciente");var titulo = document.querySelector(".titulo");
+titulo.textContent = "Aparecida Nutricionista";
+
+var paciente = document.querySelector("#primeiro-paciente");
+
+console.log(paciente)
+<tr class="paciente" id="primeiro-paciente">
+    <td class="info-nome">Paulo</td>
+    <td class="info-peso">100</td>
+    <td class="info-altura">2.00</td>
+    <td class="info-gordura">10</td>
+    <td class="info-imc">0</td>
+</tr>var titulo = document.querySelector(".titulo");
+titulo.textContent = "Aparecida Nutricionista";
+
+var paciente = document.querySelector("#primeiro-paciente");
+var tdPeso = paciente.querySelector(".info-peso");
+
+console.log(paciente); // tr
+console.log(tdPeso); // td que tem o peso
+< tr class="paciente" id="primeiro-paciente">...</tr>
+<td class="info-peso">100</td>var paciente = document.querySelector("#primeiro-paciente");
+var tdPeso = paciente.querySelector(".info-peso");
+
+var peso = tdPeso.textContent;
+
+console.log(paciente); // tr
+console.log(tdPeso); // td que tem o peso
+console.log(peso); //Obter 100    < tr class="paciente" id="primeiro-paciente">...</tr>
+    <td class="info-peso">100</td>
+100var paciente = document.querySelector("#primeiro-paciente");
+
+var tdPeso = paciente.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+
+var tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;vvar tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+
+console.log(paciente); // tr
+console.log(tdAltura); 
+console.log(altura); IMC = peso / altura x alturaIMC = 100 / (2.00 x 2.00)
+IMC = 100 / 4.00
+IMC = 2IMC = 100 / (2.00 x 2.00)
+IMC = 100 / 4.00
+IMC = 25var paciente = document.querySelector("#primeiro-paciente");
+
+var tdPeso = paciente.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+
+var tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+
+var imc = peso / altura * altura; // 100 / 2.0 x 2.0 = 100 / 4 =>>>>>>> 25
+
+console.log(imc);
