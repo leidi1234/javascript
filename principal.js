@@ -38,7 +38,12 @@ console.log(paciente);
         tdImc.textContent = imc;
     }    
 }<script>
-    var paragrafo = document.querySelector("#latim");
+    var paragrafo = document.querySelector("#latim"); if (!alturaEhValida) {
+    console.log("Altura inválida!");
+    alturaEhValida = false;
+    tdImc.textContent = "Altura inválida!";
+    paciente.classList.add("paciente-invalido");
+}
     paragrafo.style.backgroundColor = "blue";
 </script><script>
    //resultadovar titulo = document.querySelector("h1");
@@ -104,4 +109,91 @@ for(var i = 0; i < pacientes.length ; i++){
 
     paciente.classList.add("paciente-invalido");
 }
-}       
+}  vfunction validaPaciente(paciente) {
+    if (validaPeso(paciente.peso)) {
+        return true;
+    } else {
+        return false;
+    }
+}ar botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var form = document.querySelector("#form-adiciona");
+    var paciente = obtemPacienteDoFormulario(form);
+
+    if (!validaPaciente(paciente)) {
+        console.log("Paciente inválido");
+    }
+
+    var pacienteTr = montaTr(paciente);    
+
+    var tabela = document.querySelector("#tabela-pacientes");
+
+    tabela.appendChild(pacienteTr);
+
+    form.reset();
+
+});  vvvar form = document.querySelector("#form-adiciona");
+var paciente = obtemPacienteDoFormulario(form);
+var pacienteTr = montaTr(paciente);
+
+if (!validaPaciente(paciente)) {
+    console.log("Paciente inválido");
+    return;
+}
+
+//...<script src="js/calcula-imc.js" ></script>
+<script src="js/form.js" ></script>
+<script src="js/remover-paciente.js" ></script>vvvar pacientes = document.querySelectorAll(".paciente");vvar pacientes = document.querySelectorAll(".paciente");
+
+pacientes.forEach(function(paciente) {
+
+});vvvar pacientes = document.querySelectorAll(".paciente");
+
+pacientes.forEach(function(paciente) {
+    paciente.addEventListener("dblclick", function() {
+
+    });
+});var pacientes = document.querySelectorAll(".paciente");
+
+pacientes.forEach(function(paciente) {
+    paciente.addEventListener("dblclick", function() {
+        this.remove();
+    });
+});vvvar pacientes = document.querySelectorAll(".paciente");
+
+pacientes.forEach(function(paciente) {
+    paciente.addEventListener("dblclick", function() {
+        this.remove();
+    });
+});vvar pacientes = document.querySelectorAll(".paciente");
+
+pacientes.forEach(function(paciente) {
+    paciente.addEventListener("dblclick", function() {
+        this.remove();
+    });
+});<section class="container">
+    <h2>Meus pacientes</h2>
+    <label for="filtrar-tabela">Filtre:</label>
+    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+    <table>
+        <thead>
+          <tr>
+             <th>Nome</th>
+             <th>Peso(kg)</th>
+             <th>Altura(m)</th>
+             <th>Gordura Corporal(%)</th>
+             <th>IMC</th>
+    </tr>
+</thead>vvv#filtrar-tabela {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 10px;
+}vvar campoFiltro = document.querySelector("#filtrar-tabela");
+
+console.log(campoFiltro);vvvvar campoFiltro = document.querySelector("#filtrar-tabela");
+
+campoFiltro.addEventListener("input", function(){
+    console.log("Digitaram no campo");
+});   
