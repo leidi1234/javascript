@@ -111,4 +111,109 @@ botaoAdicionar.addEventListener("click", function(){
 console.log(botaoAdicionar)vvvvar botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(){
     console.log("Oi, cliquei no botão.");
+});vvar campoFiltro = document.querySelector("#filtrar-tabela");
+
+campoFiltro.addEventListener("input", function(){
+    console.log(this.value);
+});vvvvvar campoFiltro = document.querySelector("#filtrar-tabela");
+
+campoFiltro.addEventListener("input", function() {vvvar campoFiltro = document.querySelector("#filtrar-tabela");
+
+campoFiltro.addEventListener("input", function() {
+    console.log(this.value);
+    var pacientes = document.querySelectorAll(".paciente");
+    for (var i = 0; i < pacientes.length; i++) {
+        var paciente = pacientes[i];
+    }
+});vvar campoFiltro = document.querySelector("#filtrar-tabela");
+
+campoFiltro.addEventListener("input", function() {
+    var pacientes = document.querySelectorAll(".paciente");
+
+    for (var i = 0; i < pacientes.length; i++) {
+        var paciente = pacientes[i];
+        var tdNome = paciente.querySelector(".info-nome");
+        var nome = tdNome.textContent;
+    }
+});vv[ 
+    {  
+        "nome": "Jéssica",
+        "peso": 47,
+        "altura": 1.54,
+        "gordura": 17,
+        "imc": 19.82
+
+    },
+    {
+        "nome": "Flavio",
+        "peso": 70,
+        "altura": 1.7,
+        "gordura": 17,
+        "imc": 20.76
+    }
+//...v//...
+   <button id="buscar-pacientes" class="botao bto-principal">Buscar Pacientes</button>
+
+</section><script src="js/calcula-imc.js"></script>
+<script src="js/form.js"></script>
+<script src="js/remover-paciente.js"></script>
+<script src="js/filtra.js"></script>
+<script src="js/buscar-pacientes.js"></script>vvar botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Buscando pacientes");
+
+});var botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Buscando pacientes...");
+    https://api-pacientes.herokuapp.com/pacientes
+});vvar botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function() {
+    console.log("Buscando pacientes...");
+    var xhr = new XMLHttpRequest();
+});vvvvvar botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function(){
+    console.log("Buscando pacientes...");
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
+});var botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function(){
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
+
+    xhr.send();
+});vvar botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
+
+    xhr.addEventListener("load", function(){
+
+    });
+
+    xhr.send();
+});var botaoAdicionar = document.querySelector("#buscar-pacientes");
+
+botaoAdicionar.addEventListener("click", function() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
+
+    xhr.addEventListener("load", function() {
+        console.log(xhr.responseText);
+    });
+
+    xhr.send();
+});vvar xhr = new XMLHttpRequest();
+    console.log(this.value);
+    var pacientes = document.querySelectorAll(".paciente");
 });
